@@ -28,7 +28,8 @@ For some reason, the methods are not working properly, sometimes they return the
 #### Why the method _firstRepeatedCharacter_ is throwing an exception?
 >Because we need to add an _else_ statement, because if not while the verification occurs, we go out of range.
 
-`public char firstRepeatedCharacter() {
+```
+public char firstRepeatedCharacter() {
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
 
@@ -44,7 +45,8 @@ For some reason, the methods are not working properly, sometimes they return the
         }
         return 0;
     } 
-`
+```
+
 #### Why the method _countGroupsRepeatedCharacters_ returns 3 in one case when it should be 4?
 
 **Strategy**: Place breakpoints before the methods are executed, step into them and see what happens.
