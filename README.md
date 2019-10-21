@@ -43,7 +43,8 @@ For some reason, the methods are not working properly, sometimes they return the
             }
         }
         return 0;
-    } `
+    } 
+`
 #### Why the method _countGroupsRepeatedCharacters_ returns 3 in one case when it should be 4?
 
 **Strategy**: Place breakpoints before the methods are executed, step into them and see what happens.
