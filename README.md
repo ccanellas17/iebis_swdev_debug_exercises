@@ -24,7 +24,26 @@ In this code there is a class called WordAnalyzer that contains several methods 
 For some reason, the methods are not working properly, sometimes they return the correct value and others don't. You need to answer the next questions.
 
 #### Why the method _firstMultipleCharacter_ is returning "c" for the word _comprehensive_, when the correct answer should be "e"?
+>
 #### Why the method _firstRepeatedCharacter_ is throwing an exception?
+>Because we need to add an _else_ statement, because if not while the verification occurs, we go out of range.
+
+`public char firstRepeatedCharacter() {
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+
+            if ((i + 1) == word.length()) {
+                return 0;
+            }
+
+            else {
+                if (ch == word.charAt(i + 1)) {
+                    return ch;
+                }
+            }
+        }
+        return 0;
+    } `
 #### Why the method _countGroupsRepeatedCharacters_ returns 3 in one case when it should be 4?
 
 **Strategy**: Place breakpoints before the methods are executed, step into them and see what happens.
